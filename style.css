@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+
+
+
+
+/* Navbar edit */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8A1F3D;
+    align-items: center;
+    padding: 0 2rem;
+    height: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    font-size: 20px;
+}
