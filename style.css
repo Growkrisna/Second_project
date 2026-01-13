@@ -145,17 +145,35 @@ h1 span:nth-child(8) {
     justify-content: center; 
 }
 
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+}
+
 .box1 p, .box2 p, .box3 p {
-       border: solid 2px #120F1A;
-    background-color: #120F1A;
-    opacity: 0.4;
+    position: relative;
     padding: 20px;
     border-radius: 16px;
+    opacity: 1;
+    font-size: 20px;
+    background: linear-gradient(to right, #999 20%, #fff 40%, #fff 60%, #999 80%);
+    background-size: 200% auto;
+    background-color: #141218;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+    font-weight: bold;
 }
 
 .box3 {
     position: relative;
     top: -100px;
+}
+
+.box1 {
+    width: 700px;
 }
 
 .box2 {
@@ -175,4 +193,11 @@ h1 span:nth-child(8) {
 .box2 p {
     position: relative;
     left: 70px;
+}
+
+.box1 p:hover, .box2 img:hover, .box2 p:hover, .box3 p:hover{
+    transform: scale(1.05);
+    transition: transform 0.7s ease;
+    opacity: 1;
+    background-color: #141218;
 }
