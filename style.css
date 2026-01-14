@@ -128,76 +128,45 @@ h1 span:nth-child(8) {
 
 .section1 {
     display: flex;
-    padding: 4rem 2rem;
+    flex-direction: row;
     background-image: url(gambar/bg2.jpg);
     background-size: cover;
-    text-align: center;
+    text-align: left;
     height: 100vh;
-    font-size: 24px;
+    font-size: 16px;
     justify-content: center;
-    color: whitesmoke;
-    gap: 20px;
-}
-
-.box1 , .box3 , .box2{
-    display: flex;
     align-items: center;
-    justify-content: center; 
+    color: whitesmoke;
 }
 
-@keyframes shine {
-    to {
-      background-position: 200% center;
-    }
-}
-
-.box1 p, .box2 p, .box3 p {
-    position: relative;
-    padding: 20px;
-    border-radius: 16px;
-    opacity: 1;
-    font-size: 20px;
-    background: linear-gradient(to right, #999 20%, #fff 40%, #fff 60%, #999 80%);
-    background-size: 200% auto;
-    background-color: #141218;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 3s linear infinite;
-    font-weight: bold;
-}
-
-.box3 {
-    position: relative;
-    top: -100px;
-}
-
-.box1 {
-    width: 700px;
-}
-
-.box2 {
+.about-desc {
     flex: 1;
-    padding: 0 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 60px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 50px;    
+    height: 100%;
 }
 
-.box2 img {
-    border-radius: 24px;
+.about-desc h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f1f1f1;
 }
 
-.box2 p {
-    position: relative;
-    left: 70px;
+.about-desc p {
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
-.box1 p:hover, .box2 img:hover, .box2 p:hover, .box3 p:hover{
-    transform: scale(1.05);
-    transition: transform 0.7s ease;
-    opacity: 1;
-    background-color: #141218;
+.about-img {
+    flex: 1;
+    height: 100%;
+    background-image: url(gambar/SherlockHolmes.jpg);
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
