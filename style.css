@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     width: 100%;
 }
@@ -18,20 +18,23 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
+    z-index: 10;
     padding: 0 2rem;
     height: 80px;
-    width: 100%;
-    z-index: 1;
+    width: 100%;    
+    gap: 30px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     padding: 1rem;
+    gap: 70px;
+    margin-top: 24px;
 }
 
 nav ul li a {
@@ -39,20 +42,26 @@ nav ul li a {
     text-decoration: none;
     margin: 0 1rem;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 
 /* Header edit */
 
 header {
-    background: url('gambar/bg.png') no-repeat center center/cover;
+    /* background: url('gambar/bg.png') no-repeat center center/cover; */
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 header h1 {
@@ -72,12 +81,17 @@ header h1 {
     top: 0;
     left: 0;
     object-fit: cover;
+    background-image: url(gambar/nture-fog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 
 .title {
     width: 100%;
     height: 100%;
-    background-color: #120F1A;
+    background-color: #8C8C8C;
     font-size: 150px;
     mix-blend-mode: multiply;
     color: white;
@@ -86,9 +100,15 @@ header h1 {
     justify-content: center;
 }
 
+
+
+
 /* Section 1 edit */
 
 .section1 {
+    margin-top: 100vh;
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     background-image: url(gambar/bg2.jpg);
@@ -102,7 +122,7 @@ header h1 {
 }
 
 .about-desc {
-    flex: 1;
+    width: 50%;
     background: rgba(0, 0, 0, 0.5);
     padding: 60px;
     display: flex;
@@ -123,7 +143,7 @@ header h1 {
 }
 
 .about-img {
-    flex: 1;
+    width: 50%;
     height: 100%;
     background-image: url(gambar/SherlockHolmes.jpg);
     display: flex;
