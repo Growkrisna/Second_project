@@ -81,7 +81,7 @@ header h1 {
     top: 0;
     left: 0;
     object-fit: cover;
-    background-image: url(gambar/nture-fog.jpg);
+    background-image: url(gambar/ftuy4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -151,4 +151,184 @@ header h1 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+/* Section 2 edit */
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #222;
+    text-align: center;
+    height: 100vh;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.section2 .left-section2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    height: 100%;
+}
+
+.left-section2 .role-game {
+    position: relative;
+    font-size: 24px;
+    width: 240px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    color: #161616;
+    border: 1px solid #8C8C8C;
+    background-color: #8c8c8c;
+    border-radius: 10px;
+}
+
+.left-section2 h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+.right-section2 h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+.section2 .right-section2 {
+    width: 50%;
+    height: 100%;
+    background-image: url(gambar/game.jpg);
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    padding-top: 50px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.game-thing {
+    display: flex;
+    margin-top: 20px;
+}
+
+.game-list {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.game1 {
+    background-image: url(gambar/𝘍𝘭𝘢𝘷𝘪𝘢.jpg);
+    background-size: cover;
+}
+
+.game2 {
+    background-image: url(gambar/Stardew\ valley.jpg);
+    background-size: cover;
+}
+
+.game3 {
+    background-image: url(gambar/𝐊𝐫𝐢𝐬\ 𝐢𝐜𝐨𝐧.jpg);
+    background-size: cover;
+}
+
+.game4 {
+    background-image: url(gambar/Geometry\ Dash.jpg);
+    background-size: cover;
+}
+
+.game-list:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.game-list  span{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Waifu Card Style */
+.waifu {
+    width: 320px;
+    height: 480px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+    margin-top: 20px;
+}
+
+.flavia {
+    width: 100%;
+    height: 100%;
+    background-image: url(gambar/Flavia.jpg);
+    background-size: cover;
+    background-position: top center;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Gradient Overlay */
+.waifu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+/* Name Tag / Caption */
+.waifu::after {
+    content: "Flavia";
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-size: 2rem;
+    font-family: "Viaoda Libre", serif;
+    color: #fff;
+    z-index: 2;
+    transform: translateY(10px);
+    opacity: 0.8;
+    transition: all 0.4s ease;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Hover Effects */
+.waifu:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.waifu:hover .flavia {
+    transform: scale(1.1);
+}
+
+.waifu:hover::before {
+    opacity: 0.9;
+}
+
+.waifu:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+    color: var(--text, #fff); /* Fallback to white if var not available */
 }
