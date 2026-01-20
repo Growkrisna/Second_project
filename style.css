@@ -260,6 +260,7 @@ header h1 {
 .game4 {
     background-image: url(gambar/Geometry\ Dash.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .game-list:hover{
